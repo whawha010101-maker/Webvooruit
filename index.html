@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WebStart – Professionele websites voor lokale ondernemers</title>
+<style>
+:root{--bg:#fff;--alt:#f4f6fa;--surface:#fff;--text:#0f1b33;--muted:#58627a;--line:#e3e8f0;--accent:#2f6bff;--accent2:#1d4ed8;--on:#fff;--navy:#0b1730;--navy2:#13244a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1424;--alt:#111a2e;--surface:#16213a;--text:#eaf0fb;--muted:#9eabc4;--line:#243250;--accent:#5b8cff;--accent2:#7ba0ff;--navy:#08101f;--navy2:#0f1c38;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1424;--alt:#111a2e;--surface:#16213a;--text:#eaf0fb;--muted:#9eabc4;--line:#243250;--accent:#5b8cff;--accent2:#7ba0ff;--navy:#08101f;--navy2:#0f1c38;color-scheme:dark}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+av{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+av .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;letter-spacing:-.02em;color:var(--text);text-decoration:none}
+.logo i{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#fff;font-style:normal;font-size:.95rem}
+.links{display:flex;gap:28px;align-items:center}
+.links a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}.links a:hover{color:var(--text)}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:13px 26px;border-radius:10px;font-weight:600;text-decoration:none;border:0;font-size:1rem;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn.sm{padding:9px 18px;font-size:.92rem;color:#fff!important}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.hero{background:radial-gradient(1200px 500px at 80% -10%,var(--navy2),var(--navy));color:#fff;padding:84px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.tag{display:inline-block;font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#9db8ff;border:1px solid rgba(157,184,255,.3);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.08;margin:0 0 20px;letter-spacing:-.035em;font-weight:800}
+h1 span{color:#7ba0ff}
+.lead{color:#b9c6e0;font-size:1.15rem;margin:0 0 30px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.checks{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#b9c6e0;font-size:.92rem}
+.checks span::before{content:"✓";color:#6fe3a5;font-weight:700;margin-right:7px}
+.mock{background:#fff;border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.45);overflow:hidden;color:#0f1b33}
+.bar{display:flex;align-items:center;gap:6px;padding:11px 14px;background:#eef1f6}.bar i{width:10px;height:10px;border-radius:50%;background:#cfd6e2}
+.bar u{margin-left:10px;flex:1;background:#fff;border-radius:6px;font-size:.72rem;color:#7a859b;padding:3px 10px;text-decoration:none}
+.m-nav{display:flex;justify-content:space-between;padding:12px 18px;font-size:.8rem;font-weight:700;border-bottom:1px solid #eef1f6}.m-nav span{color:#7a859b;font-weight:500}
+.m-hero{padding:34px 20px;background:linear-gradient(135deg,#1d4ed8,#0b1730);color:#fff}
+.m-hero b{display:block;font-size:1.35rem;margin-bottom:4px}.m-hero small{opacity:.8}
+.m-hero em{display:inline-block;margin-top:14px;background:#fff;color:#1d4ed8;font-style:normal;font-weight:700;font-size:.78rem;padding:7px 14px;border-radius:7px}
+.m-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px}.m-row div{height:58px;border-radius:8px;background:#eef1f6}
+section{padding:88px 0}.alt{background:var(--alt)}
+.eyebrow{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.15;margin:0 0 14px;letter-spacing:-.025em}
+.sub{color:var(--muted);margin:0 0 44px;max-width:600px;font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(15,27,51,.08)}
+.ic{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--accent) 12%,transparent);display:grid;place-items:center;margin-bottom:16px}
+.ic svg{width:23px;height:23px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;counter-reset:s}
+.step{counter-increment:s;padding:6px 0}
+.step::before{content:"0" counter(s);display:block;font-size:2.2rem;font-weight:800;color:var(--accent);opacity:.9;letter-spacing:-.03em;margin-bottom:6px}
+.step h3{margin:0 0 6px}.step p{margin:0;color:var(--muted)}
+.band{background:linear-gradient(135deg,var(--accent2),var(--accent));color:#fff;border-radius:20px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.band h2{margin:0 0 6px;color:#fff}.band p{margin:0;opacity:.9}
+.band .btn{background:#fff;color:#1d4ed8}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.info p{color:var(--muted)}.info a{color:var(--accent);font-weight:600;text-decoration:none}
+form{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px}
+label{display:block;font-weight:600;margin:0 0 6px;font-size:.9rem}
+.f{margin-bottom:16px}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+footer{background:var(--navy);color:#9fb0d0;padding:44px 0 30px;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#cfd9ee;text-decoration:none}footer b{color:#fff}
+@media(max-width:820px){.hero .wrap,.split{grid-template-columns:1fr}.links a:not(.btn){display:none}section{padding:64px 0}.hero{padding:52px 0 64px}.band{padding:32px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#"><i>W</i>WebStart</a>
+<div class="links"><a href="#branches">Voor wie</a><a href="#diensten">Diensten</a><a href="#werkwijze">Werkwijze</a><a class="btn sm" href="#contact">Gratis voorstel</a></div>
+</div></nav>
+
+<div class="hero"><div class="wrap">
+<div>
+<span class="tag">Websites voor lokale ondernemers</span>
+<h1>Een website die <span>klanten oplevert</span>, niet alleen een mooi plaatje</h1>
+<p class="lead">Wij bouwen en onderhouden professionele websites voor kappers, dakdekkers, installateurs en andere vakmensen. Jij doet je werk, wij zorgen dat je online gevonden wordt.</p>
+<div class="cta"><a class="btn" href="#contact">Vraag een gratis voorstel aan</a><a class="btn ghost" href="#branches">Bekijk de mogelijkheden</a></div>
+<div class="checks"><span>Vrijblijvend gesprek</span><span>Alles uit handen genomen</span><span>Goed op mobiel</span></div>
+</div>
+<div class="mock" aria-hidden="true">
+<div class="bar"><i></i><i></i><i></i><u>www.kapsalon-anna.nl</u></div>
+<div class="m-nav">Kapsalon Anna<span>Behandelingen · Prijzen · Contact</span></div>
+<div class="m-hero"><b>Jouw stijl, onze passie</b><small>Boek eenvoudig online jouw afspraak</small><br><em>Afspraak maken</em></div>
+<div class="m-row"><div></div><div></div><div></div></div>
+</div>
+</div></div>
+
+<section id="branches"><div class="wrap">
+<p class="eyebrow">Voor wie</p>
+<h2>Een website op maat van jouw vak</h2>
+<p class="sub">Elk bedrijf heeft andere behoeften. Daarom ontwerpen we de site rond wat jouw klanten willen weten en doen.</p>
+<div class="grid">
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div><h3>Kappers</h3><p>Prijslijst, fotogalerij, online afspraken en reviews van tevreden klanten.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg></div><h3>Dakdekkers</h3><p>Voor-en-na foto’s, diensten, werkgebied en een snelle offerteknop.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.2-.7-.7-2.2z"/></svg></div><h3>Installateurs</h3><p>Storingsnummer direct zichtbaar, diensten overzichtelijk en snel bereikbaar.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 3v8a3 3 0 0 0 3 3v7M7 3v6M10 3v8a3 3 0 0 1-3 3M17 21V3c-2 1-3.5 4-3.5 8H17"/></svg></div><h3>Horeca &amp; overig</h3><p>Menukaart, openingstijden, route en reserveren. Ook voor schilders en tuinders.</p></div>
+</div>
+</div></section>
+
+<section class="alt" id="diensten"><div class="wrap">
+<p class="eyebrow">Wat je krijgt</p>
+<h2>Alles voor een succesvolle online start</h2>
+<p class="sub">Geen losse onderdelen of verrassingen achteraf. Eén aanspreekpunt voor je hele website.</p>
+<div class="grid">
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Perfect op mobiel</h3><p>De meeste klanten zoeken op hun telefoon. Jouw site werkt overal soepel.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Vindbaar in Google</h3><p>Zodat mensen uit jouw regio je vinden wanneer ze zoeken naar jouw vak.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Meer aanvragen</h3><p>Duidelijke bel-, mail- en offerteknoppen zodat bezoekers klant worden.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Hosting &amp; onderhoud</h3><p>Domein, hosting, beveiliging en updates regelen wij voor je.</p></div>
+</div>
+</div></section>
+
+<section id="werkwijze"><div class="wrap">
+<p class="eyebrow">Werkwijze</p>
+<h2>In drie stappen online</h2>
+<p class="sub">Duidelijk, snel en zonder technisch gedoe.</p>
+<div class="steps">
+<div class="step"><h3>Kennismaking</h3><p>We bespreken kort jouw bedrijf, wensen en doelgroep.</p></div>
+<div class="step"><h3>Ontwerp &amp; feedback</h3><p>Je ziet een voorbeeld en geeft aan wat je nog wilt aanpassen.</p></div>
+<div class="step"><h3>Live zetten</h3><p>We zetten je website online en regelen alles eromheen.</p></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="band"><div><h2>Klaar voor een professionele website?</h2><p>Ontvang vrijblijvend een voorstel, afgestemd op jouw bedrijf.</p></div><a class="btn" href="#contact">Neem contact op</a></div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap split">
+<div class="info">
+<p class="eyebrow">Contact</p>
+<h2>Laten we kennismaken</h2>
+<p>Vul het formulier in en we nemen zo snel mogelijk contact met je op. Liever direct mailen of bellen? Dat kan ook.</p>
+<p>Adres: Copierlaan 10, Leerdam<br>E-mail: <a href="mailto:info@webstart.nl">info@webstart.nl</a><br>Telefoon: <a href="tel:0612345678">06-12345678</a></p>
+<p><a class="btn" style="color:#fff" href="https://www.google.com/maps/search/?api=1&query=Copierlaan+10+Leerdam" target="_blank" rel="noopener">📍 Bekijk op Google Maps</a></p>
+</div>
+<form onsubmit="return false">
+<div class="f"><label for="n">Naam</label><input id="n" placeholder="Jouw naam"></div>
+<div class="f"><label for="b">Soort bedrijf</label><select id="b"><option>Kapper</option><option>Dakdekker</option><option>Installateur</option><option>Anders</option></select></div>
+<div class="f"><label for="t">Telefoon of e-mail</label><input id="t" placeholder="Hoe kunnen we je bereiken?"></div>
+<div class="f"><label for="m">Bericht</label><textarea id="m" rows="3" placeholder="Waar kunnen we je mee helpen?"></textarea></div>
+<button class="btn" id="send" type="button" style="width:100%">Verstuur aanvraag</button>
+</form>
+</div></section>
+
+<footer><div class="wrap">
+<div><b>WebStart</b><br>Professionele websites voor lokale ondernemers.</div>
+<div>Copierlaan 10, Leerdam<br><a href="mailto:info@webstart.nl">info@webstart.nl</a><br>© 2026 WebStart. Alle rechten voorbehouden.</div>
+</div></footer>
+<script>
+document.getElementById('send').addEventListener('click',function(){
+var s=encodeURIComponent('Aanvraag website: '+document.getElementById('b').value);
+var body=encodeURIComponent('Naam: '+document.getElementById('n').value+'\nContact: '+document.getElementById('t').value+'\n\n'+document.getElementById('m').value);
+location.href='mailto:info@webstart.nl?subject='+s+'&body='+body;
+});
+</script>
+</body>
+</html>
